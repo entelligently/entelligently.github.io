@@ -1,0 +1,46 @@
+<style>
+#instances{
+    min-height: 70vh;
+    width: 70vw;
+    color: var(--dark-2-color, #212121);
+    background-color: var(--white-2-color, #F6F6F6);
+    border-radius: 60px;
+    padding: 1.5rem;
+    margin: 1rem auto;
+}
+#instanceList{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.instance{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 200px;
+    height: 200px;
+    padding: 1rem;
+    background: var(--primary-color);
+    color: var(--white-2-color, #F6F6F6);
+    text-decoration: none;
+    margin: 0.5rem;
+    border-radius: 20px;
+}
+.instance:hover{
+    background: var(--secondary-color);
+}
+</style>
+<section id="instances">
+    <h2>Instances of entelligently</h2>
+    <div id="instanceList">
+    {% for instance in site.data.instances %}
+    <a class="instance" href="https://{{ instance.url }}">
+        <h3>{{ instance.title }}</h3>
+        <p>{{ instance.description }}</p>
+        <p>{{ instance.url }}</p>
+    </a>
+
+    {% endfor %}
+    </div>
+</section>

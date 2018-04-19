@@ -1,0 +1,29 @@
+# Site settings
+
+# Setup
+title:            Entelligently
+tagline:          'Entelligently is cool'
+description:      'The aim of entelligently® is to improve the comfort of building users whilst reduce carbon emissions. The more data you send the more intelligent the system becomes.'
+keywords:         'energy, IOT'
+url:              ''
+baseurl:          ''
+twitter_username: Entelligently
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

@@ -1,0 +1,78 @@
+<style>
+  .navbar{
+    width: 100%;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #openSideNavBtn{
+    display: none;
+    color: var(--dark-2-color, #212121);
+    text-align: right;
+    font-size: 2rem;
+    margin: 1rem 2rem 1rem auto;
+    cursor: pointer;
+  }
+  .main-logo-contain{
+    max-width: 200px;
+    margin-left: 2rem;
+  }
+  .main-logo{
+    fill: var(--dark-2-color, #212121);
+    width: 200px;
+    cursor: pointer;
+  }
+  .main-logo:hover{
+    fill: var(--dark-3-color);
+  }
+  #widenav{
+    flex:1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 2rem;
+  }
+  .navbar-nav-item{
+    color: var(--dark-2-color, #212121);
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+  }
+  .navbar-nav-item:hover{
+    color: var(--dark-2-color, #212121);
+    /* text-decoration: underline; */
+  }
+  @media only screen and (max-width: 800px){
+    #openSideNavBtn{
+      display: block
+    }
+    #widenav{
+      display: none;
+    }
+  }
+</style>
+<section class="container navbar">
+	<div class="main-logo-contain">
+    <a href="{{ site.url }}/index.html">
+      <img src="{{ site.url }}/imgs/icon/icon-tm-48x48.png">
+
+    </a>
+  </div>
+	<nav id="widenav">
+  {% assign pages_list = site.pages | sort: 'order' %}
+      {% for node in pages_list %}
+        {% if node.title != null %}
+         {% if node.nav %}
+          {% if node.layout == "page" %}
+            <a class="navbar-nav-item {% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
+          {% endif %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+</nav>
+<a id="openSideNavBtn" onclick="openSideNav()"><i  class="far fa-bars"></i></a>
+</section>
