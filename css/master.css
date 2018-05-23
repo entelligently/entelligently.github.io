@@ -153,8 +153,8 @@ input:focus,
 button:focus,
 textarea:focus{
     outline: none !important;
-    border-color: var(--main-color, #9A1144);
-    box-shadow: 0 0 0 1px var(--main-color, #9A1144)
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 1px var(--primary-color)
 }
 /* 
    ==========================================================================

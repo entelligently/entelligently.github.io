@@ -38,6 +38,7 @@ title: home
   }
 
   .splash #blurb {
+    z-index: 1;
     max-width: 500px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -50,17 +51,22 @@ title: home
     -ms-flex-align: start;
     align-items: flex-start;
   }
-    .bottom-cta {
+
+  .splash #blurb img {
+    width: 300px;
+  }
+
+  .bg {
     background-color: var(--white-2-color, #F6F6F6);
-    border-radius: 50px 50px 0 0 ;
+    border-radius: 20px;
     padding: 1rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -68,30 +74,93 @@ title: home
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
+
+  .screencaps {
+    width: 1000px;
+    z-index: 0;
+    pointer-events: none;
+    position: fixed;
+    top: 90px;
+    left: 56%;
+    transform: rotate(-12deg);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .screencaps>img {
+    margin: 2rem;
+  }
+
+  .screencaps>img.portrait {
+    padding: 2.4rem 0.6rem;
+    display: -ms-flexbox;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+    border-radius: 38px;
+    background: var(--grey-3-color, #d4d4d4);
+    -webkit-box-shadow: inset 0 4px 7px 1px #fff, inset 0 -5px 20px rgba(173, 186, 204, .25), 0 2px 6px rgba(0, 21, 64, .14), 0 10px 20px rgba(0, 21, 64, .05);
+    box-shadow: inset 0 4px 7px 1px #fff, inset 0 -5px 20px rgba(173, 186, 204, .25), 0 2px 6px rgba(0, 21, 64, .14), 0 10px 20px rgba(0, 21, 64, .05);
+  }
+
+  .screencaps>img.landscape {
+    padding: 0.6rem 2.4rem;
+    display: -ms-flexbox;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+    border-radius: 38px;
+    background: var(--grey-3-color, #d4d4d4);
+    -webkit-box-shadow: inset 0 4px 7px 1px #fff, inset 0 -5px 20px rgba(173, 186, 204, .25), 0 2px 6px rgba(0, 21, 64, .14), 0 10px 20px rgba(0, 21, 64, .05);
+    box-shadow: inset 0 4px 7px 1px #fff, inset 0 -5px 20px rgba(173, 186, 204, .25), 0 2px 6px rgba(0, 21, 64, .14), 0 10px 20px rgba(0, 21, 64, .05);
+  }
+
+  .screencaps>img.desktop.landscape {
+    max-height: 240px;
+  }
+
+  .screencaps>img.mobile.portrait {
+    max-width: 240px;
+  }
+
+  .screencaps>img.tablet.landscape {
+    max-height: 400px;
+  }
+
+  .screencaps>img.tablet.portrait {
+    max-width: 200px;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .screencaps {
+      top: -400px;
+    }
+  }
+
+  @media only screen and (max-width: 800px) and (max-height: 500px) {
+    .screencaps {
+      display: none;
+    }
+  }
 </style>
 
 <section class="container splash">
   <div id="blurb">
-    <h1>{{ site.title }}</h1>
+    <img src="./imgs/logo/logo-text.svg">
     <p>{{ site.description }}</p>
     <span>
       <a class="btn btn-primary" href="{{ site.url }}/contact.html">Contact</a>
     </span>
   </div>
 </section>
-<section class="with-bg">
 
-</section>
-<section class="with-bg">
-  <div class="container">
-    <div class="bottom-cta">
-      <span>
-        <h1>Ready to get started?</h1>
-        <h2>Get in touch</h2>
-      </span>
-      <span>
-        <a href="{{ site.url }}/contact.html" class="btn btn-black">Contact</a>
-      </span>
-    </div>
+<section>
+  <div class="screencaps">
+    <img class="mobile portrait" src="./imgs/screenshots/mobile-comfort.png">
+    <img class="tablet landscape" src="./imgs/screenshots/tablet-about.png">
+    <img class="desktop landscape" src="./imgs/screenshots/desktop-comfort.png">
+    <img class="mobile portrait" src="./imgs/screenshots/mobile-comfort(1).png">
+    <img class="mobile portrait" src="./imgs/screenshots/mobile-consent(1).png">
+    <img class="tablet portrait" src="./imgs/screenshots/tablet-comfort.png">
   </div>
 </section>

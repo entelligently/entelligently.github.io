@@ -6,6 +6,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    height: 64px;
   }
   #openSideNavBtn{
     display: none;
@@ -15,13 +16,9 @@
     margin: 1rem 2rem 1rem auto;
     cursor: pointer;
   }
-  .main-logo-contain{
-    max-width: 200px;
-    margin-left: 2rem;
-  }
   .main-logo{
-    fill: var(--dark-2-color, #212121);
-    width: 200px;
+    width: 50px;
+    height: 50px;
     cursor: pointer;
   }
   .main-logo:hover{
@@ -41,9 +38,12 @@
     text-decoration: none;
     display: block;
     padding: 1rem;
+    background-color: #f6f6f6;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
   }
   .navbar-nav-item:hover{
-    color: var(--dark-2-color, #212121);
+    background-color: var(--primary-color);
     /* text-decoration: underline; */
   }
   @media only screen and (max-width: 800px){
@@ -56,12 +56,9 @@
   }
 </style>
 <section class="container navbar">
-	<div class="main-logo-contain">
     <a href="{{ site.url }}/index.html">
-      <img src="{{ site.url }}/imgs/icon/icon-tm-48x48.png">
-
+      <img class="main-logo" src="{{ site.url }}/imgs/icon/trans/icon.svg">
     </a>
-  </div>
 	<nav id="widenav">
   {% assign pages_list = site.pages | sort: 'order' %}
       {% for node in pages_list %}
@@ -74,5 +71,5 @@
         {% endif %}
       {% endfor %}
 </nav>
-<a id="openSideNavBtn" onclick="openSideNav()"><i  class="far fa-bars"></i></a>
+<!-- <a id="openSideNavBtn" onclick="openSideNav()"><i  class="far fa-bars"></i></a> -->
 </section>
