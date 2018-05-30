@@ -9,8 +9,8 @@
     height: 64px;
   }
   #openSideNavBtn{
-    display: none;
-    color: var(--dark-2-color, #212121);
+    display: block;
+    color: var(--dark-3-color, #212121);
     text-align: right;
     font-size: 2rem;
     margin: 1rem 2rem 1rem auto;
@@ -24,6 +24,14 @@
   .main-logo:hover{
     fill: var(--dark-3-color);
   }
+  .navbar:after{
+      display: block;
+      content: '®';
+      position: absolute;
+      color: var(--primary-color);
+      margin-left: 55px;
+      margin-top: -20px;
+    }
   #widenav{
     flex:1;
     display: flex;
@@ -59,7 +67,7 @@
     <a href="{{ site.url }}/index.html">
       <img class="main-logo" src="{{ site.url }}/imgs/icon/trans/icon.svg">
     </a>
-	<nav id="widenav">
+	<!-- <nav id="widenav">
   {% assign pages_list = site.pages | sort: 'order' %}
       {% for node in pages_list %}
         {% if node.title != null %}
@@ -70,6 +78,6 @@
           {% endif %}
         {% endif %}
       {% endfor %}
-</nav>
-<!-- <a id="openSideNavBtn" onclick="openSideNav()"><i  class="far fa-bars"></i></a> -->
+</nav> -->
+<a id="openSideNavBtn" onclick="openSideNav()"><i  class="far fa-bars"></i></a>
 </section>

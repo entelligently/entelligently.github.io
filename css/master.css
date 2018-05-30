@@ -7,6 +7,7 @@
 :root {
     /* RGB */
     --primary-color: rgb(0, 181, 239);
+    --primary-color-light: rgba(0, 181, 239, 0.6);
     --secondary-color: rgb(107, 180, 47);
     --grey-color: rgb(238, 238, 238);
     --black-color: rgb(33, 33, 33);
@@ -15,7 +16,7 @@
     --secondary-color: #6BB42F;
     --grey-color: #EEE;
     --black-color: #212121;
-    --err-color: var(--paper-red-700);
+    --err-color: #e53935;
     --white-1-color: #FFF;
     --white-2-color: #F6F6F6;
     --grey-1-color: #eeeeee;
