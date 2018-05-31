@@ -3,7 +3,7 @@
 		width: 100%;
 		flex-shrink: 0;
 		padding: 1rem 0rem;
-		background-color: #F6F6F6;
+		/* background-color: #F6F6F6; */
 		color: var(--dark-3-color);
 	}
 	footer>.cols {
@@ -72,53 +72,18 @@
 	}
 </style>
 <footer>
+	<article class="container">
+		<aside>
+			<a href="https://twitter.com/{{ site.twitter_username }}"><i class="fab fa-twitter"></i></a>
+		</aside>
+	</article>
 	<div class="cols container">
 		<span class="col">
 			<ul>
-				<li>
-					<span class="col-tile">Product</span>
-				</li>
-				<li>
-					<a href="{{ site.url }}/pricing.html">Pricing</a>
-				</li>
-				<li>
-					<a href="{{ site.dashboardurl }}">Dashboard</a>
-				</li>
-				<li>
-					<a href="{{ site.url }}/faq.html">FAQ</a>
-				</li>
-			</ul>
-		</span>
-		<span class="col">
-			<ul>
-				<li>
-					<span class="col-tile">Company</span>
-				</li>
-				<li>
-					<a href="{{ site.url }}/about.html">About us</a>
-				</li>
-			</ul>
-		</span>
-		<span class="col">
-			<ul>
-				<li>
-					<span class="col-tile">Resources</span>
-				</li>
-				<li>
-					<a href="{{ site.url }}/contact.html">Contact</a>
-				</li>
 				<li>
 					<a href="{{ site.url }}/privacy-policy.html">Privacy Policy</a>
 				</li>
 			</ul>
 		</span>
 	</div>
-	<article class="container">
-		<div>
-			<p>©</p>
-		</div>
-		<aside>
-			<a href="https://twitter.com/{{ site.twitter_username }}"><i class="fab fa-twitter"></i></a>
-		</aside>
-	</article>
 </footer>

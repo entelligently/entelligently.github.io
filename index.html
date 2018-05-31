@@ -76,7 +76,10 @@ title: home
   }
   #blurb #tagline{
     color: var(--primary-color);
-    padding: 1rem;
+    padding: 1rem 0px;
+  }
+  #blurb > p{
+    max-width: 400px;
   }
 </style>
 
@@ -84,7 +87,7 @@ title: home
   <div id="blurb">
     <img src="{{ site.url }}/imgs/logo/logo-text.svg">
     <p id="tagline">{{ site.tagline }}</p>
-    <p>{{ site.description }}</p>
+    <p id="description">{{ site.description }}</p>
     <span>
       <a class="btn btn-primary" href="{{ site.url }}/contact.html">Contact</a>
     </span>
