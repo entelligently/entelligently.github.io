@@ -132,8 +132,7 @@
                 </button>
             </div>
         </form>
-</div>
-</section>
+    </section>
 </div>
 <script>
     function openModal(e) {
@@ -189,7 +188,7 @@
 
     document.getElementById("startForm").addEventListener("submit", function (e) {
         e.preventDefault(); //stop form from submitting
-        var url = 'http://kni-test-node.herokuapp.com',
+        var url = 'https://kni-test-node.herokuapp.com',
             form = e.target,
             opts = {
                 method: 'GET',
@@ -208,6 +207,7 @@
             })
             .catch(function (err) {
                 console.error('Augh, there was an error!', err);
+                alert('Augh, there was an error!\nPlease use the contact form.');
             });
     });
 </script>
