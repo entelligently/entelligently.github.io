@@ -29,4 +29,4 @@ $ bundle exec jekyll serve
 
 ## How do I deploy?
 
-To deploy, just commit and push your changes to github pages (~~master~~ gh-pages branch of this repo).
+To deploy, just commit and push your changes to github pages (~~gh-pages~~ master branch of this repo).
