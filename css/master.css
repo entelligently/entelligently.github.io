@@ -142,7 +142,7 @@ b {
 }
 
 a {
-    color: var(--priamry-color);
+    color: var(--primary-color);
 }
 
 /* 
@@ -226,9 +226,9 @@ textarea:focus{
     background: var(--secondary-color);
     border-color: var(--secondary-color);
 }
-@media only screen and (max-width: 800px) {
 
-.container {
-    max-width: 94vw;
-}
+@media only screen and (max-width: 1000px) {
+    .container {
+        max-width: 90vw;
+    }
 }
