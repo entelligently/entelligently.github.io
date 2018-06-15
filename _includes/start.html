@@ -207,6 +207,11 @@
             })
             .catch(function (err) {
                 console.error('Augh, there was an error!', err);
+                if (err.status == 404) {
+                    alert('We couldn\'t find your entelligently location.\nPlease use the contact form.')
+                    window.location.href = '{{ site.url }}/contact.html';
+                    return err.statusText;
+                }
                 alert('Augh, there was an error!\nPlease use the contact form.');
             });
     });

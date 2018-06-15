@@ -44,6 +44,13 @@
     align-items: center;
     margin-right: 2rem;
   }
+  {% if  page.title == "home" %}
+  @media only screen and (max-height: 900px) {
+        .main-logo, .navbar:after {
+            display: none;
+        }
+    }
+  {% endif %}
 </style>
 <section class="container navbar">
     <a href="{{ site.url }}/index.html">
