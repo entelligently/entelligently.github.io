@@ -6,7 +6,6 @@
     position: fixed;
     top: 90px;
     left: 56%;
-    /* transform: rotate(-12deg); */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -14,15 +13,13 @@
   }
 
   .screencaps>img {
+    opacity: 0;
     margin: 2rem;
     transform: rotate(-12deg);
-    animation-name: anim;
-    animation-duration: 2.5s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    /* -webkit-animation: anim 4s infinite alternate;
-    animation: anim 4s infinite alternate; */
+    -webkit-animation: animto 1s ease-in 1 normal forwards, anim 3s ease-in-out infinite alternate forwards;
+    animation: animto 1s ease-in 1 normal forwards, anim 3s ease-in-out infinite alternate forwards;
+    -webkit-box-shadow: inset 0 4px 7px 1px #fff, inset 0 -5px 20px rgba(173, 186, 204, .25), 0 2px 6px rgba(0, 21, 64, .14), 0 10px 20px rgba(0, 21, 64, .05), -10px 20px 8px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0 4px 7px 1px #fff, inset 0 -5px 20px rgba(173, 186, 204, .25), 0 2px 6px rgba(0, 21, 64, .14), 0 10px 20px rgba(0, 21, 64, .05), -10px 20px 8px 5px rgba(0, 0, 0, 0.25);
   }
 
   .screencaps>img.portrait {
@@ -32,8 +29,6 @@
     -ms-flex-align: center;
     border-radius: 38px;
     background: var(--grey-3-color, #d4d4d4);
-    -webkit-box-shadow: inset 0 4px 7px 1px #fff, inset 0 -5px 20px rgba(173, 186, 204, .25), 0 2px 6px rgba(0, 21, 64, .14), 0 10px 20px rgba(0, 21, 64, .05), -10px 20px 8px 5px rgba(0, 0, 0, 0.25);
-    box-shadow: inset 0 4px 7px 1px #fff, inset 0 -5px 20px rgba(173, 186, 204, .25), 0 2px 6px rgba(0, 21, 64, .14), 0 10px 20px rgba(0, 21, 64, .05), -10px 20px 8px 5px rgba(0, 0, 0, 0.25);
   }
 
   .screencaps>img.landscape {
@@ -43,8 +38,6 @@
     -ms-flex-align: center;
     border-radius: 38px;
     background: var(--grey-3-color, #d4d4d4);
-    -webkit-box-shadow: inset 0 4px 7px 1px #fff, inset 0 -5px 20px rgba(173, 186, 204, .25), 0 2px 6px rgba(0, 21, 64, .14), 0 10px 20px rgba(0, 21, 64, .05), -10px 20px 8px 5px rgba(0, 0, 0, 0.25);
-    box-shadow: inset 0 4px 7px 1px #fff, inset 0 -5px 20px rgba(173, 186, 204, .25), 0 2px 6px rgba(0, 21, 64, .14), 0 10px 20px rgba(0, 21, 64, .05), -10px 20px 8px 5px rgba(0, 0, 0, 0.25);
   }
 
   .screencaps>img.desktop.landscape {
@@ -66,18 +59,23 @@
     animation-delay: 1.2s;
     max-width: 200px;
   }
-
+  @keyframes animto {
+    100% {
+        opacity: 1;
+      }  
+    }
   @keyframes anim {
     0% {
         -webkit-transform: rotate(-12deg) translateY(0px);
-        transform: rotate(-12deg) translateY(0px)
+        transform: rotate(-12deg) translateY(0px);
+        box-shadow: inset 0 4px 7px 1px #fff, inset 0 -5px 20px rgba(173, 186, 204, .25), 0 2px 6px rgba(0, 21, 64, .14), 0 10px 20px rgba(0, 21, 64, .05), -6px 9px 8px 4px rgba(0, 0, 0, 0.35);
     }
     100% {
-        -webkit-transform: rotate(-12deg) translateY(10px);
-        transform: rotate(-12deg) translateY(10px);
+        -webkit-transform: rotate(-12deg) translateY(-25px) translateX(10px);
+        transform: rotate(-12deg) translateY(-25px) translateX(10px);
+        box-shadow: inset 0 4px 7px 1px #fff, inset 0 -5px 20px rgba(173, 186, 204, .25), 0 2px 6px rgba(0, 21, 64, .14), 0 10px 20px rgba(0, 21, 64, .05), -10px 20px 18px 7px rgba(0, 0, 0, 0.15);
     }
-}
-
+  }
   @media only screen and (max-width: 800px) {
     .screencaps {
       top: -400px;
@@ -90,13 +88,11 @@
     }
   }
 </style>
-<section>
-  <div class="screencaps">
-    <img class="mobile portrait" src="{{ site.url }}/imgs/screenshots/mobile-comfort.png">
-    <img class="tablet landscape" src="{{ site.url }}/imgs/screenshots/tablet-about.png">
-    <img class="desktop landscape" src="{{ site.url }}/imgs/screenshots/desktop-comfort.png">
-    <img class="mobile portrait" src="{{ site.url }}/imgs/screenshots/mobile-comfort(1).png">
-    <img class="mobile portrait" src="{{ site.url }}/imgs/screenshots/mobile-consent(1).png">
-    <img class="tablet portrait" src="{{ site.url }}/imgs/screenshots/tablet-comfort.png">
-  </div>
-</section>
+<div class="screencaps">
+  <img class="mobile portrait" src="{{ site.url }}/imgs/screenshots/mobile-comfort.png">
+  <img class="tablet landscape" src="{{ site.url }}/imgs/screenshots/tablet-about.png">
+  <img class="desktop landscape" src="{{ site.url }}/imgs/screenshots/desktop-comfort.png">
+  <img class="mobile portrait" src="{{ site.url }}/imgs/screenshots/mobile-comfort(1).png">
+  <img class="mobile portrait" src="{{ site.url }}/imgs/screenshots/mobile-consent(1).png">
+  <img class="tablet portrait" src="{{ site.url }}/imgs/screenshots/tablet-comfort.png">
+</div>
