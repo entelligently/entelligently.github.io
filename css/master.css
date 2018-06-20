@@ -100,7 +100,7 @@ body {
     justify-content: space-between;
     color: var(--dark-2-color, #212121);
     background-color: var(--white-2-color, #F6F6F6);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 16px;
     /*fallback*/
     font-size: 1rem;
@@ -132,7 +132,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 p {}
@@ -163,7 +163,7 @@ textarea:focus{
    ========================================================================== 
 */
 .btn {
-    font-family:'Raleway', 'FontAwesome';
+    font-family:'Roboto', 'FontAwesome';
     display: inline-block;
     padding: 0.8rem;
     color: var(--white-2-color, #F6F6F6);
