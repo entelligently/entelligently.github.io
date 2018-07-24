@@ -1,0 +1,267 @@
+/* Container
+ *
+ * Align the contents of the site above the proper threshold with some margin-fu
+ * with a 25%-wide `.sidebar`.
+ */
+
+.content .blog {
+  margin: 0px auto;
+  max-width: 1000px;
+  padding: 1rem 4rem 4rem 4rem;
+  border-radius: 3rem;
+  background: var(--white-2-color, #F6F6F6);
+
+}
+
+.content .blog:before {
+  content: "";
+  display: block;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  right: -370px;
+  bottom: -400px;
+  background: var(--primary-color);
+  border-radius: 50px;
+  -ms-transform: rotate(-80deg);
+  transform: rotate(-80deg);
+  z-index: -1;
+  box-shadow: 0 0 11px 0px rgba(0, 0, 0, 0.6);
+}
+
+.posts{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.posts .post-thumb{
+  min-width: 300px;
+  max-width: 360px;
+  max-height: 400px;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.1s ease-in-out;
+}
+
+.posts .post-thumb:hover,
+.posts .post-thumb:focus{
+  text-decoration: none;
+  filter: grayscale(1) brightness(0.8);
+}
+
+.posts .post-thumb img{
+  width: 100%;
+  height: 100%;
+}
+
+
+.post h2,
+.post h3,
+.post h4,
+.post h5{
+  margin-top: 4rem;
+}
+.post iframe,
+.post .twitter-tweet{
+    max-width: 100%;
+    margin: 0px auto;
+}
+
+.post .img-right{
+  float: right;
+  max-width: 50%;
+  padding: 1rem 0rem 1rem 1rem;
+}
+
+.post .img-center{
+  width: 100%;
+  padding: 1rem auto;
+}
+
+.post .img-left{
+  float: left;
+  max-width: 50%;
+  padding: 1rem 1rem 1rem 0rem;
+}
+
+.blog .btn{
+  font-family: 'Roboto';
+  padding: 0.8rem;
+  color: #F6F6F6;
+  color: var(--white-2-color, #F6F6F6);
+  border:color, #F6F6F6;
+  border: 1px solid var(--white-2-color, #F6F6F6);
+  -webkit-transition: 200ms;
+  transition: 200ms;
+  background: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 5px;
+  display: block;
+  margin: 0rem auto;
+  max-width: 200px;
+  text-align: center;
+
+}
+
+.blog .btn:hover {
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-1px);
+}
+
+.blog .btn:focus {
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(0);
+}
+
+.blog .btn.btn-black {
+  color: #F6F6F6;
+  color: var(--white-2-color, #F6F6F6);
+  background: #212121;
+  background: var(--dark-2-color, #212121);
+  border-color: #212121;
+  border-color: var(--dark-2-color, #212121);
+}
+
+.blog .btn.btn-grey {
+  color: #212121;
+  color: var(--dark-2-color, #212121);
+  background: #c7c7c7;
+  background: var(--grey-4-color, #c7c7c7);
+  border-color: #c7c7c7;
+  border-color: var(--grey-4-color, #c7c7c7);
+}
+
+.blog .btn.btn-black-line {
+  color: #212121;
+  color: var(--dark-2-color, #212121);
+  border-color: #212121;
+  border-color: var(--dark-2-color, #212121);
+}
+
+.blog .btn.btn-main {
+  color: #F6F6F6;
+  color: var(--white-2-color, #F6F6F6);
+  background: #00B5EF;
+  background: var(--primary-color, #00B5EF);
+  border-color: #00B5EF;
+  border-color: var(--primary-color, #00B5EF);
+}
+
+.blog .btn.btn-accent {
+  color: #212121;
+  color: var(--dark-2-color, #212121);
+  background: #6BB42F;
+  background: var(--secondary-color, #6BB42F);
+  border-color: #6BB42F;
+  border-color: var(--secondary-color, #6BB42F);
+}
+
+.blog .btn.btn-accent:hover {
+  filter: brightness(0.8);
+}
+
+
+.author{
+border: 2px solid var(--secondary-color, #00B5EF);
+padding: 1rem;
+border-radius: 5px;
+margin-bottom: 4rem;
+}
+.author-detail{
+  display: flex;
+  border-bottom: 1px solid var(--secondary-color, #00B5EF);
+}
+.author-detail h3{
+  margin: 0px;
+}
+.author-avatar{
+border-radius: 50%;
+max-width: 100px;
+max-height: 100px;
+margin-right: 1rem;
+}
+.author-links{
+font-size: 1.2rem;
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+justify-content: flex-end;
+flex-flow: flex-end;
+align-items: center;
+}
+.author-links a{
+  padding: 0.5rem 0.5rem 0rem 0rem;
+  transition: 250ms;
+}
+.author-links a:hover,
+.author-links a:focus{
+  color: var(--secondary-color, #6BB42F);
+}
+.related{
+  border: none;
+}
+.related .related-posts h3 {
+    max-width: 90%;
+}
+/** share Button CSS **/
+
+.share-btn {
+    display: inline-block;
+    color: #ffffff;
+    border: none;
+    padding: 0.5em;
+    width: 55px;
+    height: 55px;
+    border-radius: 5px;
+    box-shadow: inset 0px -5px 0px 0px rgba(51, 51, 51, 0.7);
+    outline: none;
+    text-align: center;
+    transition: 100ms;
+}
+
+.share-btn:hover {
+  color: var(--grey-3-color, #d4d4d4);
+  box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+.share-btn:active {
+  position: relative;
+  top: 2px;
+  box-shadow: none;
+  color: #e2e2e2;
+  outline: none;
+}
+
+.share-btn.twitter     { background: #55acee; }
+.share-btn.facebook    { background: #3B5998; }
+.share-btn.reddit      { background: #ff5700; }
+.share-btn.linkedin    { background: #4875B4; }
+
+.archive ul{
+  border-left: 5px solid var(--primary-color, #00B5EF);
+  list-style: none;
+  padding: 0px 0.7rem;
+}
+
+.error-page{
+  text-align: center;
+}
+.error-page p{
+  text-align: left;
+}
+.error-page .fa{
+  color: var(--primary-color, #00B5EF);
+  font-size: 6rem;
+  margin: 1rem;
+}
