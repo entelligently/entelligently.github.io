@@ -5,6 +5,7 @@ published: true
 author: jack_mason
 comments: true
 postimg: 'https://i.ytimg.com/vi/5Nj2BngIko0/maxresdefault.jpg'
+
 ---
 
 <h1 id="welcome-to-stackedit">Welcome to StackEdit!</h1>
@@ -68,4 +69,6 @@ postimg: 'https://i.ytimg.com/vi/5Nj2BngIko0/maxresdefault.jpg'
 </blockquote>
 <h2 id="manage-file-publication">Manage file publication</h2>
 <p>Since one file can be published to multiple locations, you can list and manage publish locations by clicking <strong>File publication</strong> in the <strong>Publish</strong> sub-menu. This allows you to list and remove publication locations that are linked to your file.</p>
+<pre><code>enter code here
+</code></pre>
 
