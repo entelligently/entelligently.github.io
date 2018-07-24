@@ -5,7 +5,6 @@ published: true
 author: jack_mason
 comments: true
 postimg: 'https://i.ytimg.com/vi/5Nj2BngIko0/maxresdefault.jpg'
-
 ---
 
 <h1 id="welcome-to-stackedit">Welcome to StackEdit!</h1>
