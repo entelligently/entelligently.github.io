@@ -35,8 +35,8 @@ postimg: 'http://www.pcsg.co.uk/wp-content/uploads/Entelligently-pic.png'
 <p>Corporate reputation – and the war for attracting and retaining talent are other key drivers for change. The millennials want to work for an organisation that cares both for the people and for the environment.</p>
 <p>Coupled with these drivers are advances in technology which enable us to collect, filter and crunch a huge swathe of data about our built environment which we could not do previously.</p>
 <p>Today we can gain robust performance data on anything from energy and air quality to water use, enabling us to benchmark, compare and continually learn about the performance of our buildings.</p>
-<p>**Entelligently: How it works<br>
-**</p>
+<p><strong>Entelligently: How it works<br>
+</strong></p>
 <p>Passionate about the importance of both sustainable buildings – and the need to place user comfort at the forefront of building management – two years ago, PCSG embarked on a joint project with Know Now Information, the data processing experts.</p>
 <p>The outcome was  <strong>Entelligently</strong>  our app which seeks to optimise energy usage in buildings and minimise power bills while also maximising the comfort of occupiers and handing them the power to control their environment and wellbeing at work.</p>
 <p>Supported by Innovate UK’s Energy Game Changer fund – which seeks to encourage new entrants to the energy sector and stimulate the adoption of disruptive technologies – it works by effectively turning people into sensors and actuators.</p>
