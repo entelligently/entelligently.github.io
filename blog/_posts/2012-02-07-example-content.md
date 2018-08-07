@@ -7,6 +7,7 @@ comments: true
 postimg: 'https://i.ytimg.com/vi/5Nj2BngIko0/maxresdefault.jpg'
 ---
 
+this is an edit!
 
 <div class="message">
   Howdy! This is an example blog post that shows several types of HTML content supported in this blog.
