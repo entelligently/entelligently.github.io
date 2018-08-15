@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Entelligently using Consentua
+title: Entelligently complies with GDPR by using Consentua
 published: true
 author: chris_cooper
 comments: true
-postimg: 'https://consentua.com/blog/public/post_imgs/2018-06-01-Entelligently-using-Consentua/comfort.PNG'
+postimg: 'https://entelligently.com/blog/post_imgs/2018-06-01-Entelligently-complies-with-GDPR-by-using-Consentua/en+con=gdpr.png'
 ---
 
 
 ## Entelligently, and needing to comply with GDPR 
 
-<img class="img-right" src="{{ site.baseurl }}/blog/post_imgs/2018-06-01-Entelligently-using-Consentua/en+con=gdpr.png" alt="img">
+<img class="img-right" src="{{ site.baseurl }}/blog/post_imgs/2018-06-01-Entelligently-complies-with-GDPR-by-using-Consentua/en+con=gdpr.png" alt="img">
 
 Entelligently is a web-based application that connects people with buildings – increasing workplace productivity, improving employee well-being and lowering energy costs.
 
@@ -25,7 +25,7 @@ What's The Solution?
 To comply with GDPR, Entelligently required something fit for purpose.
 
 <video width="853" height="480" autoplay loop muted>
-  <source src="{{ site.baseurl }}/blog/post_imgs/2018-06-01-Entelligently-using-Consentua/entelligently-consentua.mp4" type="video/mp4">
+  <source src="{{ site.baseurl }}/blog/post_imgs/2018-06-01-Entelligently-complies-with-GDPR-by-using-Consentua/entelligently-consentua.mp4" type="video/mp4">
     Your browser does not support the video tag.
 </video>
  
@@ -37,7 +37,7 @@ To comply with GDPR, Entelligently required something fit for purpose.
 
 The solution was <b>Consentua</b>.
 
-<img class="img-right" src="{{ site.baseurl }}/blog/post_imgs/2018-06-01-Entelligently-using-Consentua/avatar.PNG" alt="img">
+<img class="img-right" src="{{ site.baseurl }}/blog/post_imgs/2018-06-01-Entelligently-complies-with-GDPR-by-using-Consentua/avatar-350x350.png" alt="img">
 
 Entelligently uses Consentua to gather consent for the storage of personal data from registered users. This data may include a user’s name, email address, mobile number, gender, age range, location and – most importantly – their level of comfort.
 
@@ -47,15 +47,17 @@ The purpose of the data collection – and the type of personal data being proce
 
 <b>User details</b>
 
-The first screen (below) shows users the <b>Details</b> view and <b>Update Details</b> options immediately after signing up, where the users are prompted to enter their data.
+The first screen (below) shows users the <b>*Details*</b> view and <b>*Update Details*</b> options immediately after signing up, where the users are prompted to enter their data.
 
-<img class="img-center" src="{{ site.baseurl }}/blog/post_imgs/2018-06-01-Entelligently-using-Consentua/usersettings.png" alt="img">
-
+<figure>
+<img class="img-center" src="{{ site.baseurl }}/blog/post_imgs/2018-06-01-Entelligently-complies-with-GDPR-by-using-Consentua/usersettings.png" alt="img">
+<figcaption>User settings screenshot</figcaption>
+</figure>
 <b>User consent</b>
 
-The next view is the <b>User Consent</b> view (above), which users are encouraged to agree with due to the straightforward language used. Note the distinct data types and purposes being requested in the <b>User Consent</b> view. Moreover, if a user agrees, the change in colour and slider position give an explicit indication of consent. Data collection is as transparent as possible.
+The next view is the <b>*User Consent*</b> view (above), which users are encouraged to agree with due to the straightforward language used. Note the distinct data types and purposes being requested in the <b>*User Consent*</b> view. Moreover, if a user agrees, the change in colour and slider position give an explicit indication of consent. Data collection is as transparent as possible.
  
-The <b>User Consent</b> view is also embedded as part of the user settings page, where the user is free to change consent at any time.
+The <b>*User Consent*</b> view is also embedded as part of the user settings page, where the user is free to change consent at any time.
 
 A user can then register for Entelligently once they have been given a URL access link.
 
@@ -65,7 +67,10 @@ A user can then register for Entelligently once they have been given a URL acces
 
 The next phase is to be able to check consent at any time. Entelligently can now check users against a particular purpose and whether an individual user has given consent. This can be done via the Consentua dashboard reports (as seen directly below). 
 
-<img class="img-center" src="{{ site.baseurl }}/blog/post_imgs/2018-06-01-Entelligently-using-Consentua/Entelligently-report.png" alt="img">
+<figure>
+<img class="img-center" src="{{ site.baseurl }}/blog/post_imgs/2018-06-01-Entelligently-complies-with-GDPR-by-using-Consentua/Entelligently-report.png" alt="img">
+<figcaption>Consent checking screenshot</figcaption>
+</figure>
 
 For the more tech-savvy Entelligently team members, it is also possible to make a direct API (Application Programming Interface) query, a screenshot of which can be seen further down. The results on the screenshot show that for Chris Test’s particular purpose IDs (156 and 272), he has given consent – “True”.
 
@@ -75,13 +80,19 @@ It is also possible to check which users have consented to a specific purpose. T
 
 In short, Constenua enables Entelligently to comply with GDPR in the most straightforward way possible. 
 
-<img class="img-center" src="{{ site.baseurl }}/blog/post_imgs/2018-06-01-Entelligently-using-Consentua/iframe.png" alt="img">
-
+<figure>
+<img class="img-center" src="{{ site.baseurl }}/blog/post_imgs/2018-06-01-Entelligently-complies-with-GDPR-by-using-Consentua/iframe.png" alt="img">
+<figcaption>iframe code screenshot</figcaption>
+</figure>
 Using the Consentua WebSDK (Web-based Software Development Kit), Entelligently has deployed the consent service as an iframe in the user registration form. 
 
 For a demo of the WebSDK and the code snippet used, see here: <a href="https://consentua.com/demo">Consentua WebSDK Demo</a>
 
-<img class="img-right" src="{{ site.baseurl }}/blog/post_imgs/2018-06-01-Entelligently-using-Consentua/res.png" alt="img">
+
+<figure class="img-right">
+<img src="{{ site.baseurl }}/blog/post_imgs/2018-06-01-Entelligently-complies-with-GDPR-by-using-Consentua/res.png" alt="img">
+<figcaption>API response for user Christ Test screenshot</figcaption>
+</figure>
 
 This placement of the iframe after the user has signed up is essential, as Consentua needs to append the consent request to a unique user identifier (UID).
 
