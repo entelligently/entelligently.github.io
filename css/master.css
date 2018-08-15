@@ -26,6 +26,17 @@
     --dark-1-color: #000;
     --dark-2-color: #212121;
     --dark-3-color: #373737;
+
+    --ent-red: #C51532;
+    --ent-blue: #00A9DF;
+    --ent-navy: #0F7392;
+    --ent-purple: #920F8D;
+    --ent-green: #6AB430;
+    --ent-pink: #E22384;
+    --ent-lilac: #6F81BE;
+    --ent-yellow: #FFC627;
+    --ent-grey: #8E8E8D;
+    --ent-orange: #E4752D;
 }
 
 
@@ -225,6 +236,16 @@ textarea:focus{
 .btn.btn-accent:hover {
     background: var(--secondary-color);
     border-color: var(--secondary-color);
+}
+
+.btn.btn-purple {
+    color: var(--white-2-color, #F6F6F6);
+    background: var(--ent-purple);
+    border-color: var(--ent-purple);
+}
+.btn.btn-purple:hover {
+    background: var(--ent-purple);
+    border-color: var(--ent-purple);
 }
 
 @media only screen and (max-width: 1000px) {
