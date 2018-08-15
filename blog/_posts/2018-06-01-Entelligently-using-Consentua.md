@@ -8,74 +8,95 @@ postimg: 'https://consentua.com/blog/public/post_imgs/2018-06-01-Entelligently-u
 ---
 
 
-## Entelligently 
+## Entelligently, and needing to comply with GDPR 
 
-<img class="img-right" src="{{ site.baseurl }}/blog/post_imgs/2018-06-01-Entelligently-using-Consentua/comfort.PNG" alt="img">
+<img class="img-right" src="{{ site.baseurl }}/blog/post_imgs/2018-06-01-Entelligently-using-Consentua/en+con=gdpr.png" alt="img">
 
-The use case from Entelligently was to get consent to capture personal data from a web app accessed by registered users.  The personal data being used is your name, email, mobile number, gender, age range, location and most importantly your comfort.  
+Entelligently is a web-based application that connects people with buildings – increasing workplace productivity, improving employee well-being and lowering energy costs.
 
-Entelligently is a web service that connects buildings to people.  Delivering a more comfortable and productive work environment.  Whilst ensuring a building meets its expected energy performance and sustainability targets. 
+It does all this while ensuring the building meets its expected energy performance and sustainability targets. 
 
-
-## What does Consentua do?
-
-<img class="img-center" src="{{ site.baseurl }}/blog/post_imgs/2018-06-01-Entelligently-using-Consentua/iframe.png" alt="img">
-
-Using the Consentua WebSDK Entelligently has deployed the consent service as part of the user registration form as an iframe. To see a demo of the WebSDK and the code snippet used go here:  [Consentua WebSDK Demo](https://consentua.com/demo)
-
-This placement of the iframe after the user has signed up is essential as Consentua needs to append the consent request to an unique user identifier a UID.  
-
-Consentua has a dedicated Entelligently client consent service (CID), which has a service (SID), which is linked to it a private template (TID).  
-
-Which means that the credentials being used are as per the details in the box. 
-
+However, as Entelligently collects and uses personal data, it needs to comply with GDPR. 
+ 
+What's The Solution?
 
 ## The Solution
 
-The type and purpose of the personal data being processed is made clearly, in an unambiguous form and as part of the upfront registration process. Clearly meeting GDPR criteria. The user is always in control. Here is the first consent screen the user sees immediately on sign up.
+To comply with GDPR, Entelligently required something fit for purpose.
 
 <video width="853" height="480" autoplay loop muted>
   <source src="{{ site.baseurl }}/blog/post_imgs/2018-06-01-Entelligently-using-Consentua/entelligently-consentua.mp4" type="video/mp4">
     Your browser does not support the video tag.
 </video>
+ 
+<b>For the user</b>, it needed to be easy to interact with and easy to understand, so the user knows exactly how and why their personal data is being stored. A user-friendly focus allows the option to opt out of personal data collection at any time.
 
+<b>For the Entelligently team</b>, it also needed to be intuitive and easy to understand – allowing the team to see the decisions of users (and how their data is used) in real time.
 
-Note the distinct data types and purposes being requested. And when the user agrees the change in colour as well as the slider position change give a clear transparent indication of consent granted.  
+<b>For the developer</b>, it needed to be easy to integrate – allowing utilisation of a product requiring minimal code.
 
-The consent view is embedded as part of the user settings page.  The user is free to change consent at any time.  
+The solution was <b>Consentua</b>.
+
+<img class="img-right" src="{{ site.baseurl }}/blog/post_imgs/2018-06-01-Entelligently-using-Consentua/avatar.PNG" alt="img">
+
+Entelligently uses Consentua to gather consent for the storage of personal data from registered users. This data may include a user’s name, email address, mobile number, gender, age range, location and – most importantly – their level of comfort.
+
+The purpose of the data collection – and the type of personal data being processed – is made known clearly and unambiguously by Consentua. This is done as part of the upfront registration process, evidently meeting GDPR criteria, as we’ll see below. 
+
+## How it works – the user’s perspective
+
+<b>User details</b>
+
+The first screen (below) shows users the <b>Details</b> view and <b>Update Details</b> options immediately after signing up, where the users are prompted to enter their data.
 
 <img class="img-center" src="{{ site.baseurl }}/blog/post_imgs/2018-06-01-Entelligently-using-Consentua/usersettings.png" alt="img">
 
+<b>User consent</b>
 
-The user can register for Entelligently once they have been given the link to access.  The next view is the consent view (See above), which they are encouraged to agree to due to clear language used.  Once the continue button is pressed the user is directed to the home screen.  
+The next view is the <b>User Consent</b> view (above), which users are encouraged to agree with due to the straightforward language used. Note the distinct data types and purposes being requested in the <b>User Consent</b> view. Moreover, if a user agrees, the change in colour and slider position give an explicit indication of consent. Data collection is as transparent as possible.
+ 
+The <b>User Consent</b> view is also embedded as part of the user settings page, where the user is free to change consent at any time.
 
-## Checking Consent
+A user can then register for Entelligently once they have been given a URL access link.
 
-The next phase is to be able to check consent at any time.  This can be done either via the Consentua dashboard reports or via a direct API query.  Check users against a particular purpose or check an individual users consent. 
+## How it works – the Entelligently team’s perspective
+
+<b>Checking Consent</b>
+
+The next phase is to be able to check consent at any time. Entelligently can now check users against a particular purpose and whether an individual user has given consent. This can be done via the Consentua dashboard reports (as seen directly below). 
 
 <img class="img-center" src="{{ site.baseurl }}/blog/post_imgs/2018-06-01-Entelligently-using-Consentua/Entelligently-report.png" alt="img">
 
+For the more tech-savvy Entelligently team members, it is also possible to make a direct API (Application Programming Interface) query, a screenshot of which can be seen further down. The results on the screenshot show that for Chris Test’s particular purpose IDs (156 and 272), he has given consent – “True”.
+
+It is also possible to check which users have consented to a specific purpose. This returns a list of users who have consented (all flagged as true). There is also a report on all users registered to a service – this returns a longer list of users.
+
+## How it works – the developer’s perspective
+
+In short, Constenua enables Entelligently to comply with GDPR in the most straightforward way possible. 
+
+<img class="img-center" src="{{ site.baseurl }}/blog/post_imgs/2018-06-01-Entelligently-using-Consentua/iframe.png" alt="img">
+
+Using the Consentua WebSDK (Web-based Software Development Kit), Entelligently has deployed the consent service as an iframe in the user registration form. 
+
+For a demo of the WebSDK and the code snippet used, see here: <a href="https://consentua.com/demo">Consentua WebSDK Demo</a>
+
 <img class="img-right" src="{{ site.baseurl }}/blog/post_imgs/2018-06-01-Entelligently-using-Consentua/res.png" alt="img">
 
-Here is the output from the API query for a particular user - Chris Test.  The results show that for a specific purpose ID’s (156 and 272) this user has given consent - ‘True”.  
+This placement of the iframe after the user has signed up is essential, as Consentua needs to append the consent request to a unique user identifier (UID).
 
+Consentua has a dedicated Entelligently client consent service identifier (CID) with a service identifier (SID), further to which is linked a private template identifier (TID). This means that the credentials being used are as per the details in the ‘User settings’ screenshot.
 
-It is also possible to check which users have consented to a specific purpose.  This returns a list of users who have consented (all flagged as true). Their is also a report on all users registered to a service,returns a longer list of users. 
+“It is really easy to deploy Consentua into an existing web app,” says Jack Mason, an Entelligently developer.
 
-## The Developers view
+When asked why, Jack replied: “All the hard work is already done for you with the iframe. Inputting the userID is the only thing left to do.”
 
-A quote from Jack the developer for Entelligently:
-“It is really  easy to deploy Consentua into an existing web app” 
+## The Outcome
 
-When asked why it was so easy Jack said:
-“All the hard work is already done for you with the iframe.  Leaving me with the only bit to do was to input a userID”. 
+The result is that:
 
-The Result
-The Entelligently users are happy as they can clearly see what personal data is being used for which purpose.  If they do not consent for their personal data to be used, the data is still captured but their identity is not processed from an analysis perspective.  
+* Entelligently users are happy. They can clearly see what personal data is being used and for what purpose. If they do not consent for their personal data to be used, the data is still gathered but their identity is not processed from an analysis perspective.
 
-The client is happy as the building users are giving lots of personal information in return for a comfortable working environment.  Happy occupants mean more productive employees.  All these benefits obtained by having an audit of the consent.
+* The client is happy. If a building can adapt to its occupants’ needs, by gathering and analysing personal data, it will become a more comfortable working environment. Happy occupants mean more productive employees. All these benefits are obtained by having an audit of their consent.
 
-The Entelligently service is happy as it has a consented to use of personal data.  This personal data is essential to the success of the service that Entelligently delivers, namely a comfortable building that is connected to the people it serves.  
-
-
-
+* The Entelligently service is happy. Its use of personal data is consented to. This personal data is essential to the success of the service that Entelligently delivers – namely, a comfortable building connected to the people it serves.
