@@ -10,9 +10,9 @@ postimg: 'https://entelligently.com/blog/post_imgs/2018-06-01-Entelligently-comp
 
 ## Entelligently, and needing to comply with GDPR 
 
-Entelligently is a web-based application that connects people with buildings – increasing workplace productivity, improving employee well-being and lowering energy costs.
-
 <img class="img-center" src="{{ site.baseurl }}/blog/post_imgs/2018-06-01-Entelligently-complies-with-GDPR-by-using-Consentua/en+con=gdpr.png" alt="img">
+
+Entelligently is a web-based application that connects people with buildings – increasing workplace productivity, improving employee well-being and lowering energy costs.
 
 It does all this while ensuring the building meets its expected energy performance and sustainability targets. 
 
@@ -24,10 +24,7 @@ What's The Solution?
 
 To comply with GDPR, Entelligently required something fit for purpose.
 
-<video width="853" height="480" autoplay loop muted>
-  <source src="{{ site.baseurl }}/blog/post_imgs/2018-06-01-Entelligently-complies-with-GDPR-by-using-Consentua/entelligently-consentua.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
+<img class="img-center" src="{{ site.baseurl }}/blog/post_imgs/2018-06-01-Entelligently-complies-with-GDPR-by-using-Consentua/entelligently-consentua.gif">
  
 <b>For the user</b>, it needed to be easy to interact with and easy to understand, so the user knows exactly how and why their personal data is being stored. A user-friendly focus allows the option to opt out of personal data collection at any time.
 

@@ -191,6 +191,7 @@ margin-bottom: 4rem;
 }
 .author-detail{
   display: flex;
+  flex-wrap: wrap;
   border-bottom: 1px solid var(--secondary-color, #00B5EF);
 }
 .author-detail h3{
@@ -275,4 +276,10 @@ align-items: center;
   color: var(--primary-color, #00B5EF);
   font-size: 6rem;
   margin: 1rem;
+}
+
+@media only screen and (max-width: 400px) {
+  .content .blog {
+    padding: 1rem;
+  }
 }
