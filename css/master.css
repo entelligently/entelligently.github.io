@@ -187,6 +187,7 @@ textarea:focus{
     border-radius: 5px;
     min-width: 80px;
     text-align: center;
+    margin: 0.2rem;
 }
 
 .btn:hover {

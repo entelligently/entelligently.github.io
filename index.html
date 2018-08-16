@@ -10,7 +10,7 @@ title: home
     width: 100vw;
     height: 100vh;
     right: -370px;
-    bottom: -400px;
+    bottom: -500px;
     background: var(--primary-color);
     border-radius: 50px;
     -ms-transform: rotate(-80deg);
@@ -81,6 +81,13 @@ title: home
   #blurb > p{
     max-width: 400px;
   }
+
+  #ctaContain{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 </style>
 
 <section class="container splash">
@@ -88,7 +95,7 @@ title: home
     <img src="{{ site.url }}/imgs/logo/logo-text.svg">
     <p id="tagline">{{ site.tagline }}</p>
     <p id="description">{{ site.description }}</p>
-    <span>
+    <span id="ctaContain">
       <a class="btn btn-primary" href="{{ site.url }}/contact.html">Contact</a>
       <a class="btn btn-purple" href="{{ site.url }}/blog">Blog</a>
       {% include start.html %}
