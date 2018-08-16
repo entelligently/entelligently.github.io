@@ -8,9 +8,10 @@ postimg: 'https://entelligently.com/blog/post_imgs/2018-06-01-Entelligently-comp
 ---
 
 
+<img class="img-center img-shadow" src="{{ site.baseurl }}/blog/post_imgs/2018-06-01-Entelligently-complies-with-GDPR-by-using-Consentua/en+con=gdpr.png" alt="img">
+
 ## Entelligently, and needing to comply with GDPR 
 
-<img class="img-center" src="{{ site.baseurl }}/blog/post_imgs/2018-06-01-Entelligently-complies-with-GDPR-by-using-Consentua/en+con=gdpr.png" alt="img">
 
 Entelligently is a web-based application that connects people with buildings – increasing workplace productivity, improving employee well-being and lowering energy costs.
 
