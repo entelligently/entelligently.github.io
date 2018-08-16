@@ -103,6 +103,11 @@
   padding: 1rem 1rem 1rem 0rem;
 }
 
+.post .img-shadow{
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.54);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.54);
+}
+
 .blog .btn{
   font-family: 'Roboto';
   padding: 0.8rem;
