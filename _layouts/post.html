@@ -9,28 +9,6 @@ layout: default
   {{ content }}
 </div>
 
-<!-- Look the author details up from the site config. -->
-{% for author in site.data.authors %}
-<!-- Output author details if some exist. -->
-{% if author.id == page.author %}
-<div class="author">
-  <div class="author-detail">
-    {% if author.avatar %}
-    <img class="author-avatar" src="{{ author.avatar }}">
-    {% endif %}
-    <article>
-    <h3>{{ author.name }}</h3>
-    {% if author.description %}<p>{{ author.description }}</p>{% endif %}
-    </article>
-  </div>
-  <span class="author-links">
-    {% if author.twitter %}<a href="https://twitter.com/{{ author.twitter }}"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i></a>{% endif %}
-    {% if author.email %}<a href="mailto:{{ author.email }}"><i class="far fa-fw fa-envelope" aria-hidden="true"></i></a>{% endif %}
-    {% if author.web %}<a href="{{ author.web }}"><i class="fa fa-fw fa-external-link" aria-hidden="true"></i></a>{% endif %}
-  </span>
-</div>
-{% endif %}
-{% endfor %}
 
 <div class="share">
 <h2>Share This</h2>
