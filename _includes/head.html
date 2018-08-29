@@ -22,11 +22,6 @@
   <!-- meta SEO tags -->
   <meta name="description" content="{{ site.description }}" />
   <meta name="keywords" content="{{ site.keywords }}" />
-  <!-- CSS -->
-  <link rel="stylesheet" href="{{ site.url }}/css/normalize.css">
-  <link rel="stylesheet" href="{{ site.url }}/css/poole.css">
-  <link rel="stylesheet" href="{{ site.url }}/css/master.css">
-  <link rel="stylesheet" href="{{ site.url }}/css/blog.css">
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:500|Rubik" rel="stylesheet">
   <!-- Fontawsome -->
@@ -48,10 +43,22 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="#00B5EF" />
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-74260509-5"></script>
+  <!-- Consentua WebSDK -->
+  <script src="https://websdk.consentua.com/websdk/consentua-embed.js.php"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ site.url }}/css/normalize.css">
+  <link rel="stylesheet" href="{{ site.url }}/css/poole.css">
+  <link rel="stylesheet" href="{{ site.url }}/css/master.css">
+  <link rel="stylesheet" href="{{ site.url }}/css/blog.css">
   <!-- js -->
   <script type="text/javascript" src="{{ site.url }}/js/fingerprint2.min.js"></script>
   <script src="{{ site.url }}/js/nav.js"></script>
   <script src="{{ site.url }}/js/jscookie.js"></script>
-  <!-- Consentua WebSDK -->
-  <script src="https://websdk.consentua.com/websdk/consentua-embed.js.php"></script>
+  <script src="{{ site.url }}/js/anime.min.js"></script>
+  {% if page.title == "home" %}
+  <script src="{{ site.url }}/js/index-anim.js"></script>
+  {% endif %}
+  <noscript>
+      <link rel="stylesheet" href="{{ site.url }}/css/noscript.css">
+  </noscript>
 </head>

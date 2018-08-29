@@ -38,6 +38,7 @@
 }
 
 .posts .post-thumb{
+  opacity: 0;
   min-width: 300px;
   max-width: 360px;
   background: #fff;

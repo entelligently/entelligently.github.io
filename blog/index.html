@@ -7,7 +7,7 @@ redirect_from: /blog
 <h1 style="text-align: center;">Blog</h1>
 <div class="posts">
   {% for post in paginator.posts %}
-  <div class="post-thumb">
+  <div class="post-thumb post">
     <a href="{{ site.baseurl }}{{ post.url }}">
     {% if post.postimg %}
     <img src="{{ post.postimg }}">
@@ -38,3 +38,17 @@ redirect_from: /blog
   {% endif %}
 </div>
 </section>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  anime.timeline({
+    targets: '.posts .post',
+    delay: function(el, i) { return i * 200 },
+    duration: 1000,
+    easing: 'easeInExpo',
+  })
+  .add({
+    translateY: [-50, 0],
+    opacity: [0, 1]
+  });
+});
+</script>
