@@ -79,6 +79,10 @@ nav: true
         margin-left: auto;
     }
 
+    #contact iframe {
+        border: none;
+    }
+
     @media only screen and (max-width: 900px) {
         #contact {
             max-width: 95%;
@@ -95,31 +99,66 @@ nav: true
             <a href="mailto:enquiries@entelligently.com?Subject=mailto">enquiries@entelligently.com</a>
         </p>
     </div>
-    <form action="https://formspree.io/enquiries@entelligently.com" method="POST">
+    <form action='https://crm.zoho.eu/crm/WebToLeadForm' name=WebToLeads97721000000654049 method='POST' accept-charset='UTF-8'>
         <fieldset>
-            <input type="hidden" name="_subject" value="entelligently contact form" required/>
-            <input type="hidden" name="_next" value="{{ site.url }}/thanks.html" required/>
+            <input type='text' style='display:none;' name='xnQsjsdp' value='1afce4d3f3f1cb45fd0d817a0e76abdaaeadd18f09c357a1bf0a2b37c84ee26d'/>
+            <input type='hidden' name='zc_gad' id='zc_gad' value=''/>
+            <input type='text' style='display:none;' name='xmIwtLD' value='c6bdfa65cb26fa1813b7dccd1e7f25edce4e5503bf32f363f5f132bd52e73cde'/>
+            <input type='text' style='display:none;'  name='actionType' value='TGVhZHM='/>
+            <input type='text' style='display:none;' name='returnURL' value='https&#x3a;&#x2f;&#x2f;entelligently.com&#x2f;thanks' />
+            <input type="text" style='display:none;' name='Lead Source' value='Entelligently Contact us'/>
+            <input type="text" style='display:none;' name='LEADCF10' value='Entelligently'/>
+            <input type="text" style='display:none;' id="consentua_uid" name='LEADCF9'>
             <div class="form-row">
-                <label for="name">Name</label>
-                <input type="text" name="name" placeholder="Sam" required/>
+                <label for="name">First Name</label>
+                <input type="text" name='First Name' placeholder="Sam" required/>
+            </div>
+            <div class="form-row">
+                <label for="name">Last Name</label>
+                <input type="text" name='Last Name' placeholder="Butterworth" required/>
             </div>
             <div class="form-row">
                 <label>Email Address</label>
-                <input type="email" name="_replyto" placeholder="Sam@example.com" required/>
+                <input type="email" name='Email' placeholder="sam.butterworth@example.com" required/>
             </div>
             <div class="form-row">
-                <label>Website</label>
-                <input type="text" name="website" placeholder="example.com" />
+                <label>Company</label>
+                <input type="text" name='Company' />
             </div>
             <div class="form-row">
                 <label>Message</label>
-                <textarea name="message" placeholder="Let us know how we can help." required></textarea>
+                <textarea name='Description' maxlength='32000' placeholder="Let us know how we can help." required></textarea>
             </div>
+            <iframe id="consentua-contact-form-widget" src="" style="width: 100%;"></iframe>
         </fieldset>
         <button type="submit" class="btn btn-accent">
             Send Message
             <i class="fal fa-envelope"></i>
         </button>
     </form>
+    <script>
+        var cid = '1'; // Customer ID
+        var sid = '25'; // Consentua service ID
+        var skey = '4d58ba73-1dec-4724-b040-df0b0caf38c5'; // Consentua service key
+        var tid = '20'; // Template ID
+        if (Cookies.get('cuid')) {
+            var uid = Cookies.get('cuid');
+        } else{
+            var uid = false;
+        }
+        var cb_ready = function (msg) {
+            console.log('UID is:' + msg.message.uid);
+            document.getElementById('consentua_uid').value = msg.message.uid;
+        }
+        var cb_set = function (msg) {
+            console.log("Consent received from Consentua", msg);
+        };
+        var iframe = document.getElementById('consentua-contact-form-widget');
+        var cwrap = new ConsentuaUIWrapper(iframe, cid, uid, tid, sid, skey, function () {}, "en", {
+            ix: "https://ui.consentua.com/ui-onepurpose/ui-onepurpose.html"
+        });
+        cwrap.onset = cb_set;
+        cwrap.onready = cb_ready;
+    </script>
     </div>
 </section>
