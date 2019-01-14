@@ -13,7 +13,7 @@
     color: var(--dark-3-color, #212121);
     text-align: right;
     font-size: 2rem;
-    margin: 1rem 2rem 1rem auto;
+    margin: 1rem auto 1rem 2rem;
     cursor: pointer;
     padding: 0.2rem 0.4rem;
     border-radius: 5px;
@@ -46,7 +46,7 @@
   }
   {% if  page.title == "home" %}
   @media only screen and (max-height: 900px) {
-        .main-logo, .navbar:after {
+        .main-logo, .navbar:after, #main-logo-cr {
             display: none;
         }
     }
@@ -58,4 +58,5 @@
     </a>
     <span id="main-logo-cr">®</span>
 <a id="openSideNavBtn" onclick="openSideNav()"><i  class="far fa-bars"></i></a>
+<a class="btn btn-accent" href="https://pcsg-entelligently.eu-gb.mybluemix.net">Login</a>
 </section>
