@@ -167,16 +167,16 @@
         }
     
         var ccid = '266'; // Customer ID
-        var csid = '25'; // Consentua service ID
-        var cskey = 'ad2e97aa-2fbe-4993-92fe-598fc26a33ba'; // Consentua service key
-        var ctid = '1000001'; // Template ID
+        var csid = '42'; // Consentua service ID
+        var cskey = 'ad95c1cc-5164-4ba7-99eb-83401cfbc1d6'; // Consentua service key
+        var ctid = '103'; // Template ID
         var cuid = false;
         var ccb_ready = function (msg) {
             //When consentua is ready open/dont open modal
             console.log('UID is:' + msg.message.uid);
             cuid = msg.message.uid;
             let cooki = Cookies.getJSON('consents') || {};
-            if (!cooki["313"]) {
+            if (!cooki["329"]) {
               openCookieModal();
             } else{
               isConsented();
@@ -188,7 +188,7 @@
             let c = msg.message.consents || {};
             Cookies.set('consents', c);
             Cookies.set('cuid', cuid)
-            if (c["313"]) {
+            if (c["329"]) {
               isConsented();
             }
         };
