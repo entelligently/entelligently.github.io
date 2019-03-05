@@ -35,4 +35,4 @@ The BMS is the source of the energy use data as well as being the control centre
 
 Entelligently presents the data back to both the end user supplying their comfort data and to building owners and managers.  A series of tailored dashboards are available that show the comfort trend, likely comfort outcomes (prediction) and current comfort score in real-time.
 
-<img class="img-center" alt="entelligently diagram" src="{{ site.baseurl }}/blog/post_imgs/2019-03-05-What-is-Entelligently/diagram.png">
+<img class="img-center" alt="entelligently diagram" src="{{ site.url }}/blog/post_imgs/2019-03-05-What-is-Entelligently/diagram.jpg">
