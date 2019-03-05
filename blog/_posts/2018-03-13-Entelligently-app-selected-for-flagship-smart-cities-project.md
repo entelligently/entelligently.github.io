@@ -4,7 +4,7 @@ title: Entelligently app selected for flagship smart cities project
 published: true
 author: jack_mason
 comments: true
-postimg: 'http://www.pcsg.co.uk/wp-content/uploads/Entelligently-pic.png'
+postimg: '/blog/post_imgs/2017-12-18-The-app-harnessing-people-power-to-reduce-energy-bills-and-drive-up-productivity/pstimg.jpg'
 
 ---
 

@@ -4,7 +4,7 @@ title: Entelligently complies with GDPR by using Consentua
 published: true
 author: chris_cooper
 comments: true
-postimg: 'https://entelligently.com/blog/post_imgs/2018-06-01-Entelligently-complies-with-GDPR-by-using-Consentua/en+con=gdpr.png'
+postimg: '/blog/post_imgs/2018-06-01-Entelligently-complies-with-GDPR-by-using-Consentua/en+con=gdpr.png'
 ---
 
 

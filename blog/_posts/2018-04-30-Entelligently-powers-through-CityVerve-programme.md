@@ -4,7 +4,7 @@ title: Entelligently powers through CityVerve programme
 published: true
 author: jack_mason
 comments: true
-postimg: 'http://www.pcsg.co.uk/wp-content/uploads/smart-cities-3.jpg'
+postimg: '/blog/post_imgs/comfort.PNG'
 
 ---
 
