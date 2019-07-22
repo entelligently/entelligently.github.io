@@ -3,6 +3,8 @@ Development for entelligently.com website
 
 See live version at [entelligently.com](http://entelligently.com/)
 
+Login button is currently commented out within /_includes/nav.html
+
 
 ## Dependencies / Libraries
 
