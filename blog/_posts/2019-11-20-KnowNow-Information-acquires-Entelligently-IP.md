@@ -4,16 +4,11 @@ title: KnowNow Information acquires Entelligently IP
 published: true
 author: david_patterson
 comments: true
-postimg: '/blog/post_imgs/2019-11-20-KnowNow-Information-acquires-Entelligently-IP.jpg'
+postimg: '/blog/post_imgs/2019-11-20-KnowNow-Information-acquires-Entelligently-IP/Entelligently_Logo_600x400.jpg'
 ---
 
-On Tuesday November 19, 2019, KnowNow Information announced the completion of the purchase of all Entelligently IP held by PCSG ltd for an undisclosed sum. KnowNow Information now own 100% of Entelligently.
 
-A press release was distributed as follows
-
-
-For immediate release
-
+<em> For immediate release
 
 ## KnowNow Information buys rights to Entelligently.
 
@@ -29,7 +24,7 @@ The development of Entelligently was part funded through InnovateUK after winnin
 
 You can find more about Entelligently at www.entelligently.com and by following @entelligently on twitter.
 
-## Ends
+<em> Ends
 
 
 
@@ -40,14 +35,14 @@ Chris Cooper, CTO, 07967 275469  chris.cooper@kn-i.com
 
 
 
-## Notes to editors
+### Notes to editors
 
 1) KnowNow Information was formed in 2013 and develops software for sale and under contract for 3rd parties.
 
 4) Images are available - there is a google folder at https://drive.google.com/file/d/1bSvPnRu8GGD-1iN7ve-BsZtgFjnfAvNM/view?usp=sharing
 or contact david.patterson@kn-i.com or call 07738 310999
 
-## About Entelligently:
+### About Entelligently:
 
 Entelligently takes external weather data, internal building data from the building management system, and feedback provided by workers using their mobile devices. It helps to manage the environment by providing instruction back to the facility manager, the building management system, or by providing ‘smart nudges’ to the workers themselves.
 
