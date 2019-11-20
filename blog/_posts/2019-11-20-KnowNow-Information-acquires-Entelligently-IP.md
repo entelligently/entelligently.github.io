@@ -8,7 +8,7 @@ postimg: '/blog/post_imgs/2019-11-20-KnowNow-Information-acquires-Entelligently-
 ---
 
 
-<em> For immediate release
+<em> For immediate release </em>
 
 ## KnowNow Information buys rights to Entelligently.
 
@@ -24,7 +24,7 @@ The development of Entelligently was part funded through InnovateUK after winnin
 
 You can find more about Entelligently at www.entelligently.com and by following @entelligently on twitter.
 
-<em> Ends
+<em> Ends </em>
 
 
 
